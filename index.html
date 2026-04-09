@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script> <!-- Placeholder for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="description" content="Descarga WasaLauncher, el launcher de Minecraft más seguro y moderno. Compatible con modloaders, modpacks e instalaciones personalizadas.">
 </head>
 <body>
@@ -28,7 +28,6 @@
                 <li><a href="#">Blog</a></li>
             </ul>
             <div class="nav-auth">
-                <a href="#" class="btn btn-login">Iniciar sesión</a>
             </div>
         </nav>
     </header>
@@ -40,17 +39,7 @@
                 <h1 class="gradient-text">Seguro y moderno Launcher de Minecraft</h1>
                 <p>Disfruta de la mejor experiencia de juego con WasaLauncher. Accede a todas las versiones, gestiona tus mods con facilidad y únete a una comunidad vibrante de jugadores de todo el mundo.</p>
                 <div class="hero-btns">
-                    <a href="#" class="btn btn-primary">Registrarse</a>
-                    <a href="#download" class="btn btn-secondary">Descargar</a>
-                </div>
-                <div class="hero-compatibility">
-                    <p>Compatible con Windows, Linux y macOS</p>
-                    <div class="os-icons">
-                        <!-- Simplified OS icons -->
-                        <span class="os">Win</span>
-                        <span class="os">Lin</span>
-                        <span class="os">Mac</span>
-                    </div>
+                    <a href="#download" class="btn btn-primary">Descargar</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -91,25 +80,37 @@
             </div>
         </section>
 
-        <!-- Faster Than Fast Section -->
+        <!-- Performance Stats -->
         <section class="stats container">
-            <div class="stats-content">
-                <h2 class="gradient-text">Faster Than Fast</h2>
-                <p>WasaLauncher optimiza cada proceso para que pases menos tiempo esperando y más tiempo jugando.</p>
-                <div class="chart-container">
-                    <div class="bar-group">
-                        <label>Otros Launchers</label>
-                        <div class="bar-outer">
-                            <div class="bar-inner others" style="width: 80%;"></div>
-                        </div>
+            <div class="stats-header">
+                <h2>Faster Than Fast</h2>
+                <p>Optimizado para ofrecer el máximo rendimiento y la mayor velocidad de carga del mercado.</p>
+            </div>
+            <div class="comparison-chart">
+                <div class="comparison-row">
+                    <div class="comparison-label">
+                        <span class="delta">delta</span>
+                        <span class="version">WasaLauncher 3.0</span>
                     </div>
-                    <div class="bar-group">
-                        <label>WasaLauncher</label>
-                        <div class="bar-outer">
-                            <div class="bar-inner wasa" style="width: 25%;"></div>
-                        </div>
+                    <div class="bar-container">
+                        <div class="bar-vibrant" style="width: 18%;"></div>
                     </div>
-                    <span class="chart-note">Tiempo de carga (segundos)</span>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-label">
+                        <span class="version">WasaLauncher 2.8</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-gray" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-label">
+                        <span class="version">WasaLauncher 2.5</span>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-gray" style="width: 75%;"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -117,19 +118,23 @@
         <!-- Community & Support -->
         <section class="community container">
             <div class="community-grid">
-                <div class="comm-card skins">
-                    <div class="comm-content">
-                        <h3>Gestión sencilla de skins y capas</h3>
-                        <p>Personaliza tu avatar directamente desde el launcher y lúcelo en cualquier servidor.</p>
-                        <a href="#" class="btn btn-outline">Explorar skins</a>
-                    </div>
+                <div class="comm-card">
+                    <div class="comm-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3 class="gradient-text">Gestión sencilla de skins y capas</h3>
+                    <p>Gestiona tu aspecto en el juego a través de nuestro sitio web. Una vez que hayas iniciado sesión, tendrás acceso a la vista de personalización, donde podrás cargar fácilmente tu propio aspecto y capa. Si no tienes ninguno, siempre puedes usar los aspectos y capas que hemos preparado: asignarlos a tu cuenta esté a solo unos clics de distancia.</p>
+                    <a href="#" class="btn-text">Explorar skins <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="comm-card discord">
-                    <div class="comm-content">
-                        <h3>Vibrante comunidad en Discord</h3>
-                        <p>Únete a miles de jugadores, obtén soporte y entérate de las últimas novedades.</p>
-                        <a href="#" class="btn btn-discord">Únete a nuestro Discord</a>
-                    </div>
+                <div class="comm-card">
+                    <div class="comm-icon"><i class="fa-brands fa-discord"></i></div>
+                    <h3 class="gradient-text">Vibrante comunidad en Discord</h3>
+                    <p>Nuestro servidor es el centro definitivo para todo lo relacionado con Minecraft. Tanto si necesitas ayuda con problemas técnicos, como si quieres explorar nuevas características o simplemente participar en animadas discusiones, nuestro equipo de soporte y nuestros expertos miembros están aquí para ayudarte. Comparte tus increíbles construcciones y conéctate con otros jugadores que comparten tu pasión por el juego.</p>
+                    <a href="#" class="btn-text">Únete a nuestro Discord <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="comm-card security">
+                    <div class="comm-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="gradient-text">Construido sobre una base de integridad y compromiso con nuestros usuarios</h3>
+                    <p>Damos prioridad a la seguridad para garantizar que puedas disfrutar de tu experiencia de juego sin preocupaciones. WasaLauncher tiene un largo historial de seguridad y fiabilidad. Con cientos de miles de usuarios satisfechos en todo el mundo, hemos establecido una excelente reputación por proporcionar un entorno de juego seguro y estable. Nos tomamos la seguridad muy en serio, por eso utilizamos VirusTotal para escanear rigurosamente nuestro lanzador en busca de cualquier amenaza potencial.</p>
+                    <a href="#" class="btn-text">Más información sobre la seguridad de WasaLauncher <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -140,11 +145,18 @@
             <div class="footer-brand">
                 <div class="logo">
                     <img src="assets/logo.png" alt="WasaLauncher Logo">
-                    <span>WasaLauncher</span>
+                    <span>wasalauncher</span>
                 </div>
-                <p>El launcher más moderno y seguro para la comunidad.</p>
                 <div class="social-icons">
-                    <!-- Icons here -->
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="service-status">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>All services are online</span>
                 </div>
             </div>
             <div class="footer-links">
@@ -153,31 +165,42 @@
                     <li><a href="#">Descargar</a></li>
                     <li><a href="#">Soporte</a></li>
                     <li><a href="#">Blog</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Registrarse</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Notable</h4>
                 <ul>
-                    <li><a href="#">Iniciar sesión</a></li>
-                    <li><a href="#">Registrarse</a></li>
                     <li><a href="#">Aspectos</a></li>
                     <li><a href="#">Capas</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Información</h4>
-                <ul>
+                    <li><a href="#">Servidores</a></li>
                     <li><a href="#">Seguridad</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Discord</a></li>
                 </ul>
             </div>
+            <div class="footer-links">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Minecraft changelogs</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footer-bottom container">
-            <p>&copy; 2026 WasaLauncher. No afiliado con Mojang AB.</p>
-            <div class="legal-links">
-                <a href="#">Privacidad</a>
-                <a href="#">Términos</a>
+            <div class="footer-bottom-left">
+                <p>Copyright ©2026 wasalauncher. All rights reserved.</p>
+                <a href="#" class="revoke-choice">Click here to revoke your choice</a>
+            </div>
+            <div class="footer-bottom-right">
+                <div class="legal-links">
+                    <a href="#">Contact</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Condiciones del servicio</a>
+                </div>
+                <div class="settings-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
             </div>
         </div>
     </footer>
