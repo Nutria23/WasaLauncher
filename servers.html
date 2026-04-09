@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de los Servicios | WasaLauncher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="servers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body class="status-page">
+    <header class="status-nav">
+        <div class="container status-nav-content">
+            <div class="logo">
+                <img src="assets/logo.png" alt="WasaLauncher Logo">
+            </div>
+            <nav class="status-menu">
+                <a href="index.html">Inicio</a>
+                <a href="#" class="active">Status</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container status-main">
+        <section class="status-hero">
+            <div class="status-icon-big">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h1>All services are online</h1>
+            <p class="last-updated">Last updated on Apr 8, 2026 at 10:34pm PDT</p>
+        </section>
+
+        <section class="status-groups">
+            <!-- Website Group -->
+            <div class="status-card">
+                <div class="status-card-header">
+                    <span class="group-title">Website</span>
+                    <span class="status-badge operational">
+                        <i class="fa-solid fa-circle-check"></i> Operational
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="status-item">
+                    <div class="item-info">
+                        <span class="dot online"></span>
+                        <span class="name">wasalauncher.com</span>
+                        <span class="uptime-pct">100% uptime</span>
+                    </div>
+                    <div class="uptime-history">
+                        <!-- Uptime bars will be generated or mocked here -->
+                        <div class="bars-container" id="bars-website"></div>
+                    </div>
+                    <div class="history-labels">
+                        <span>90 days ago</span>
+                        <span>Today</span>
+                    </div>
+                </div>
+                <div class="status-item">
+                    <div class="item-info">
+                        <span class="dot online"></span>
+                        <span class="name">api.wasalauncher.com</span>
+                        <span class="uptime-pct">100% uptime</span>
+                    </div>
+                    <div class="uptime-history">
+                        <div class="bars-container" id="bars-api"></div>
+                    </div>
+                    <div class="history-labels">
+                        <span>90 days ago</span>
+                        <span>Today</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Launcher Services -->
+            <div class="status-card">
+                <div class="status-card-header">
+                    <span class="group-title">Launcher Services</span>
+                    <span class="status-badge operational">
+                        <i class="fa-solid fa-circle-check"></i> Operational
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        // Simple script to fill the bars for visual effect
+        function fillBars(containerId) {
+            const container = document.getElementById(containerId);
+            for (let i = 0; i < 90; i++) {
+                const bar = document.createElement('div');
+                bar.className = 'uptime-bar';
+                // Randomly slightly different opacities for realism
+                bar.style.opacity = 0.6 + Math.random() * 0.4;
+                container.appendChild(bar);
+            }
+        }
+        fillBars('bars-website');
+        fillBars('bars-api');
+    </script>
+</body>
+</html>

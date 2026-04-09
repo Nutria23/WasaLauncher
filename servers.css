@@ -1,0 +1,187 @@
+.status-page {
+    background-color: var(--bg-darkest); /* Corrected variable name */
+    color: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+}
+
+.status-nav {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.status-nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.status-nav .logo {
+    position: absolute;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.status-nav .logo img {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}
+
+.status-menu {
+    display: flex;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+
+.status-menu a {
+    color: #707070;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.status-menu a.active {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+}
+
+.status-main {
+    max-width: 800px !important;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.status-hero {
+    margin-bottom: 5rem;
+}
+
+.status-icon-big {
+    font-size: 4rem;
+    color: #00D26A; /* Uptime/Green color */
+    margin-bottom: 1.5rem;
+}
+
+.status-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.last-updated {
+    color: #707070;
+    font-size: 0.9rem;
+}
+
+.status-groups {
+    text-align: left;
+}
+
+.status-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.status-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.group-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.status-badge.operational {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00D26A;
+    background: rgba(0, 210, 106, 0.1);
+    padding: 0.4rem 1rem;
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.status-badge i {
+    font-size: 0.7rem;
+}
+
+.status-item {
+    margin-bottom: 3rem;
+}
+
+.status-item:last-child {
+    margin-bottom: 0;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dot.online {
+    width: 6px;
+    height: 6px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.item-info .name {
+    font-weight: 600;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.uptime-pct {
+    font-size: 0.9rem;
+    color: #707070;
+    font-weight: 600;
+}
+
+.bars-container {
+    display: flex;
+    gap: 4px;
+    height: 48px;
+    margin-bottom: 0.5rem;
+}
+
+.uptime-bar {
+    flex: 1;
+    background: #00D26A;
+    border-radius: 4px;
+}
+
+.history-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #404040;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-footer {
+    padding: 4rem 0;
+    text-align: center;
+    color: #404040;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
